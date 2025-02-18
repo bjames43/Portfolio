@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Inside <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon James | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <div class="container">
+        <!-- Icon next to name -->
+        <a class="navbar-brand" href="#">
+            <img src="imgs/icon.png" alt="Logo" class="nav-icon"> Brandon James
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link btn btn-outline-light" href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="container-fluid text-light py-5 mt-5" id="home">
+        <div class="row align-items-center text-center">
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                <h1>Hello, I'm <span>Brandon</span></h1>
+                <h3 class="fw-bold text-success">
+                    <span class="typewrite" data-period="2000" data-type='["Welcome to my portfolio.", "I am a Full Stack Developer."]'>
+                        <span class="wrap"></span>
+                    </span>
+                </h3>
+                <div class="d-flex gap-3 mt-3">
+                    <a href="https://drive.google.com/drive/folders/1zVsM1-VQAooz6cI6oVYQ3WI6rhTGvFYd?usp=sharing" class="btn btn-success">Resume</a>
+                    <a href="#contact" class="btn btn-outline-light">Contact</a>
+                </div>
+                <div class="mt-3">
+                    <a href="https://github.com/Bjamesdev" class="text-light me-3" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/brandontj31/" class="text-light me-3" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="imgs/—Pngtree—web developer isometric illustration_6067558.png" alt="Profile Picture"
+                     class="img-fluid profile-img">
+            </div>
+        </div>
+    </section>
+
+   <!-- About Me Section -->
+   <section id="about" class="container my-5">
+        <h2 class="text-center text-success">About Me</h2>
+        <p class="text-center">I'm a passionate Full Stack Developer with a deep interest in AI, automation, and cutting-edge web technologies. 
+            Whether it's crafting seamless user experiences, optimizing backend performance, or leveraging AI to build smarter applications, 
+            I love tackling complex problems and turning ideas into reality. </p>
+
+        </p>
+        <p class="text-center">
+            My experience spans across various modern frameworks and tools, allowing me to develop scalable and high-performance solutions. 
+            From interactive web applications to AI-powered automation tools, I continuously push the boundaries of what’s possible in software development.
+        </p>
+
+        <!-- Tech Stack Section -->
+        <div class="tech-stack text-center mt-4">
+            <h3 class="text-success">The tools that power my creations: </h3>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                <img src="imgs/js.png" alt="JavaScript" width="50">
+                <img src="imgs/py.png" alt="Python" width="50">
+                <img src="imgs/nodejs.png" alt="Node.js" width="50">
+                <img src="imgs/go.png" alt="Go" width="50">
+                <img src="imgs/mongo.png" alt="MongoDB" width="50">
+                <img src="imgs/aws.png" alt="AWS" width="50">
+                <img src="imgs/tensor.png" alt="TensorFlow" width="50">
+                <img src="imgs/django.png" alt="React" width="50">
+                
+            </div>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+<section id="projects" class="container my-5">
+    <h2 class="text-center text-success">Projects</h2>
+    
+    <div id="project-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Project 1 -->
+            <div class="carousel-item active">
+                <div class="project">
+                    <h3>Linear Software</h3>
+                    <p><em>Python, TensorFlow, JavaScript, HTML, CSS</em></p>
+                    <p>
+                        Ever find yourself mindlessly scrolling when you should be working? 
+                        Linear Software is an AI-powered focus assistant that monitors your screen time 
+                        and helps you stay productive by dynamically limiting distractions.
+                    </p>
+                    <ul>
+                        <li>Uses machine learning to detect productivity trends.</li>
+                        <li>Gives real-time feedback on your screen habits.</li>
+                        <li>Automatically blocks distractions when focus drops.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="carousel-item">
+                <div class="project">
+                    <h3>QuickCommerce</h3>
+                    <p><em>Python, FastAPI, Playwright, RESTful APIs, Encryption</em></p>
+                    <p>
+                        A fully automated checkout bot designed for speed. Whether it’s 
+                        grabbing limited edition drops or streamlining online shopping, 
+                        QuickCommerce automates the entire checkout process with precision.
+                    </p>
+                    <ul>
+                        <li>Scrapes live product stock and pricing data.</li>
+                        <li>Automates checkout workflows in seconds.</li>
+                        <li>Encrypts sensitive payment details for security.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#project-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <div class="card bg-dark text-light shadow-lg p-4">
+            <div class="card-body text-center">
+                <h2 class="text-success">Contact Me</h2>
+                <p class="fs-5">Feel free to reach out for collaborations or projects.</p>
+                <div class="mt-4">
+                    <p><i class="fas fa-envelope text-success"></i> Email: 
+                        <a href="mailto:Brandontj170@gmail.com" class="text-success">Brandontj170@gmail.com</a></p>
+                    <p><i class="fas fa-phone text-success"></i> Phone: 
+                        <a href="tel:+17046661718" class="text-success">+1 (704) 666-1718</a></p>
+                </div>
+                <div class="mt-3 d-flex justify-content-center gap-4">
+                    <a href="https://github.com/Bjamesdev" target="_blank">
+                        <img src="imgs/github.png" alt="GitHub" class="contact-logo">
+                    </a>
+                    <a href="https://linkedin.com/in/brandontj31/" target="_blank">
+                        <img src="imgs/linkedin.png" alt="LinkedIn" class="contact-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2025 Brandon T. James. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+    
+
+
+</body>
+</html>
